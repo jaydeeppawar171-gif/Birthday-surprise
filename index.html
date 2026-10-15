@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#190d1b">
+<title>For Teju ♥ A Birthday Surprise</title>
+<style>
+:root{--bg:#190d1b;--panel:#261326;--rose:#ff719b;--gold:#ffd99a;--cream:#fff4ed;--muted:#d8b9cb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 15% 0%,#51203d 0,transparent 42%),radial-gradient(ellipse at 95% 55%,#3a1740 0,transparent 40%),var(--bg);color:var(--cream);font-family:ui-rounded,"Trebuchet MS",system-ui,sans-serif;min-height:100vh;overflow-x:hidden}
+button,input{font:inherit}button{cursor:pointer;border:0}.hidden{display:none!important}
+#stars{position:fixed;inset:0;pointer-events:none;opacity:.45;background-image:radial-gradient(#fff 1px,transparent 1px),radial-gradient(#ffc7d8 1px,transparent 1px);background-size:83px 83px,127px 127px;background-position:0 0,30px 45px;z-index:0}
+main{position:relative;z-index:1;max-width:850px;margin:auto;padding:22px 16px 70px}
+.center{min-height:90svh;display:flex;align-items:center;justify-content:center;text-align:center}
+.card{width:100%;background:linear-gradient(145deg,rgba(65,31,61,.88),rgba(32,16,35,.92));border:1px solid rgba(255,217,225,.19);border-radius:28px;padding:clamp(24px,6vw,48px);box-shadow:0 24px 80px #08040b80;backdrop-filter:blur(12px)}
+.eyebrow{text-transform:uppercase;letter-spacing:.22em;color:var(--gold);font-size:.72rem;font-weight:700}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:500;line-height:1.12}h1{font-size:clamp(2.5rem,10vw,5.3rem);margin:15px 0;color:#fff0f5}h2{font-size:clamp(2rem,7vw,3.3rem);margin:10px 0 16px}h3{font-size:1.5rem;margin:8px 0 12px}.script{font-family:Georgia,serif;font-style:italic;color:#ffb3c9}.sub{color:var(--muted);line-height:1.7;max-width:570px;margin:0 auto 24px}
+.heart{font-size:3.2rem;display:inline-block;filter:drop-shadow(0 0 20px #ff719b80);animation:heartbeat 1.6s infinite}.btn{padding:14px 22px;border-radius:999px;background:linear-gradient(120deg,#ff719b,#ff9fbd);color:#321122;font-weight:800;box-shadow:0 8px 26px #ff719b30;transition:transform .2s}.btn:hover{transform:translateY(-2px)}.btn.secondary{background:transparent;color:var(--cream);border:1px solid #b57c9d;box-shadow:none}.btn.small{padding:10px 15px;font-size:.9rem}.codebox{display:flex;gap:9px;max-width:360px;margin:18px auto 12px}.codebox input{min-width:0;flex:1;text-align:center;letter-spacing:.25em;background:#160a19;border:1px solid #a9678a;border-radius:14px;padding:14px;color:#fff;font-size:1.1rem;outline:none}.error{min-height:1.4em;color:#ffb0c7;font-size:.9rem}.tiny{font-size:.82rem;color:#cbaabe}.section{margin:28px 0;padding:clamp(22px,5vw,36px);background:#28152bcc;border:1px solid #ffffff17;border-radius:26px;box-shadow:0 14px 40px #08040b30}.section p{line-height:1.75;color:#f1dce8}.section-head{text-align:center;margin-bottom:20px}.section-head .eyebrow{margin-bottom:8px}.divider{height:1px;background:linear-gradient(90deg,transparent,#b66c91,transparent);margin:24px 0}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 2px 22px}.brand{font-family:Georgia,serif;color:#ffe4ec;font-size:1.05rem}.pill{border:1px solid #a9678a;color:#f7d7e4;padding:8px 12px;border-radius:99px;background:#28152b}
+.hero-reveal{text-align:center;padding:24px 0 12px}.hero-reveal .heart{font-size:4.5rem}.typing{min-height:5.4em;max-width:610px;margin:14px auto;color:#ffe4ec;line-height:1.8;font-size:1.08rem}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.tile{min-height:130px;border:1px solid #ffffff20;border-radius:20px;padding:18px;background:linear-gradient(145deg,#45203f,#26152d);text-align:left;color:var(--cream);transition:.2s}.tile:hover{transform:translateY(-3px);border-color:#ff9fbd}.tile .emoji{font-size:1.8rem}.tile strong{display:block;margin:10px 0 4px}.tile span:last-child{font-size:.85rem;color:#dcbdd0}
+.photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:22px 0}.memory-grid .photo-slot{min-height:210px;box-shadow:0 10px 28px #08040b55;animation:memoryFloat 4s ease-in-out infinite;cursor:zoom-in}.memory-grid .photo-slot:nth-child(2){animation-delay:.5s}.memory-grid .photo-slot:nth-child(3){animation-delay:1s}.memory-grid .photo-slot:nth-child(4){animation-delay:1.5s}.memory-grid .photo-slot:after{content:"↗  Tap to open";position:absolute;top:10px;right:10px;border-radius:99px;padding:6px 9px;background:#170914b8;color:#fff;font-size:.72rem;z-index:3}.memory-grid .photo-slot .caption{font-size:.9rem;font-weight:700;text-align:center}.memory-grid .photo-slot img{transition:transform .45s ease}.memory-grid .photo-slot:hover img{transform:scale(1.04)}@keyframes memoryFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}.photo-slot{min-height:170px;border-radius:18px;border:1px dashed #bd7b9d;background:#1d1023;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center;color:#d7afc7;padding:12px;position:relative}.photo-slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.photo-slot .embedded-photo{cursor:zoom-in}.lightbox{position:fixed;inset:0;background:#100711ed;z-index:50;display:flex;align-items:center;justify-content:center;padding:18px}.lightbox img{max-width:100%;max-height:82vh;object-fit:contain;border-radius:16px;box-shadow:0 20px 70px #0008}.lightbox button{position:absolute;top:18px;right:18px;border-radius:50%;width:44px;height:44px;background:#fff0f4;color:#42152e;font-size:1.5rem}.photo-slot .caption{position:absolute;bottom:0;left:0;right:0;background:#170914c9;padding:9px;font-size:.8rem;color:white}.photo-slot input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}.letter{display:none;margin-top:14px;padding:20px;border-radius:18px;background:#fff0f4;color:#4b1c36;line-height:1.85;white-space:pre-line;animation:rise .45s ease}.letter.open{display:block}.envelope{font-size:2rem;display:block;margin-bottom:7px}.cake-wrap{display:flex;justify-content:center;margin:18px 0 6px}.cake{position:relative;width:190px;height:145px;cursor:pointer;filter:drop-shadow(0 12px 18px #0005)}.cake .top{position:absolute;top:37px;left:12px;width:166px;height:37px;border-radius:50%;background:#ffb7cb;border:3px solid #ffd7e2;z-index:3}.cake .body{position:absolute;top:52px;left:12px;width:166px;height:67px;background:repeating-linear-gradient(90deg,#ff719b 0 20px,#ff91b0 20px 40px);border-radius:0 0 15px 15px;z-index:2}.cake .plate{position:absolute;bottom:10px;left:0;width:190px;height:19px;background:#f9d8e6;border-radius:50%;z-index:1}.candle{position:absolute;top:2px;left:88px;width:14px;height:43px;background:repeating-linear-gradient(0deg,#fff4e6 0 7px,#b9a4ed 7px 14px);border-radius:4px;z-index:4}.flame{position:absolute;top:-17px;left:2px;width:10px;height:17px;background:#ffd86d;border-radius:70% 20% 70% 20%;transform:rotate(35deg);box-shadow:0 0 18px #ffb72d;animation:flicker .55s infinite alternate}.cake.blown .flame{display:none}.cake.blown:after{content:"✨";position:absolute;top:-12px;left:76px;font-size:28px;z-index:6}
+.footer{text-align:center;color:#b993aa;font-size:.82rem;padding:28px 0 5px}.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:#fff0f4;color:#48182f;border-radius:99px;padding:12px 18px;box-shadow:0 10px 30px #0005;z-index:20;max-width:90vw;text-align:center}.float-heart{position:fixed;bottom:-40px;z-index:10;pointer-events:none;animation:floatUp linear forwards}
+@keyframes heartbeat{0%,100%{transform:scale(1)}12%{transform:scale(1.12)}24%{transform:scale(1)}}@keyframes flicker{from{transform:rotate(28deg) scale(.9);opacity:.8}to{transform:rotate(42deg) scale(1.08);opacity:1}}@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@keyframes floatUp{to{transform:translateY(-115vh) rotate(35deg);opacity:0}}
+@media(max-width:520px){main{padding:12px 12px 48px}.grid{grid-template-columns:1fr}.tile{min-height:105px}.photo-grid{grid-template-columns:1fr 1fr}.photo-slot{min-height:145px}.nav{padding-top:10px}.section{border-radius:22px}.codebox{gap:6px}.codebox .btn{padding:12px 15px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="stars"></div>
+<main>
+  <section id="login" class="center">
+    <div class="card">
+      <div class="heart">♥</div>
+      <div class="eyebrow">A little secret, made with love</div>
+      <h1>For <span class="script">Teju</span></h1>
+      <p class="sub">Someone who loves you more than words can say has made you a little world of surprises. Ready to unlock it?</p>
+      <div class="codebox"><input id="secretCode" type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="4" placeholder="4-DIGIT CODE" aria-label="Secret code" autocomplete="one-time-code" enterkeyhint="go"><button class="btn" id="unlock">Unlock ♥</button></div>
+      <div class="error" id="error" role="status"></div>
+      <p class="tiny">A tiny key for a very big love.</p>
+    </div>
+  </section>
+
+  <div id="app" class="hidden">
+    <nav class="nav"><div class="brand">♥ For My Teju</div><button class="pill" id="musicBtn" aria-pressed="false">♫ Play a tune</button></nav>
+    <header class="hero-reveal">
+      <div class="eyebrow">Today, the world celebrates you</div>
+      <div class="heart">♥</div>
+      <h1>Happy Birthday,<br><span class="script">My Love</span></h1>
+      <div id="typedMessage" class="typing"></div>
+      <div class="section" style="max-width:650px;margin:20px auto;padding:20px">
+        <div class="eyebrow">A special message from Jaydeep</div>
+        <p style="line-height:1.9;color:#ffe4ec">Happy Birthday, Teju ❤️ You are not just my wife, you are my favourite person, my comfort, and one of the most beautiful parts of my life. I may not say it perfectly every day, but I hope you always feel how deeply you are loved. May your smile stay bright, your heart stay peaceful, and all your little dreams come true. Whatever life brings us, I want to keep making memories, laughing, growing, and walking beside you. Today is all about you, my love. Happy Birthday — today, tomorrow, and always. Forever yours, Jaydeep. ❤️</p>
+      </div>
+      <button class="btn" id="startJourney">Explore your surprises ↓</button>
+    </header>
+
+    <section class="section" id="cakeSection">
+      <div class="section-head"><div class="eyebrow">Surprise No. 1</div><h2>Make a wish, <span class="script">beautiful</span></h2><p>Tap the cake to blow out your candle. Don't forget to make a wish! ✨</p></div>
+      <div class="cake-wrap"><div class="cake" id="cake" role="button" tabindex="0" aria-label="Tap to blow out the candle"><div class="candle"><div class="flame"></div></div><div class="top"></div><div class="body"></div><div class="plate"></div></div></div>
+      <p id="cakeMessage" style="text-align:center;color:#ffd9e6">One candle. A thousand wishes. Infinite love.</p>
+    </section>
+
+    <section class="section" id="memories">
+      <div class="section-head"><div class="eyebrow">Surprise No. 2</div><h2>Our little <span class="script">universe</span></h2><p>Add your favourite photos on this phone to turn these frames into your own private memory wall. Photos stay in this browser session and aren't uploaded.</p></div>
+      <div class="photo-grid memory-grid">
+        <label class="photo-slot"><img src="memory1.jpg" alt="Our favourite family memory" class="embedded-photo"><span class="caption">Our favourite memory ♥</span></label>
+        <label class="photo-slot"><img src="memory2.jpg" alt="A beautiful family moment" class="embedded-photo"><span class="caption">A beautiful memory ♥</span></label>
+        <label class="photo-slot"><img src="memory3.jpg" alt="A happy family memory" class="embedded-photo"><span class="caption">Our happy little world ♥</span></label>
+        <label class="photo-slot"><img src="memory4.jpg" alt="A special family occasion" class="embedded-photo"><span class="caption">A moment to treasure ♥</span></label>
+      </div>
+      
+    </section>
+
+    <section class="section" id="letters">
+      <div class="section-head"><div class="eyebrow">Surprise No. 3</div><h2>Letters for <span class="script">your heart</span></h2><p>Three little notes, each for a different kind of day.</p></div>
+      <div class="grid">
+        <button class="tile" data-letter="miss"><span class="emoji">💌</span><strong>When you miss me</strong><span>A little reminder that you're never far from my heart.</span></button>
+        <button class="tile" data-letter="hug"><span class="emoji">🫶</span><strong>When you need a hug</strong><span>Open for a pocket-sized hug from me.</span></button>
+        <button class="tile" data-letter="birthday"><span class="emoji">🎁</span><strong>Your birthday letter</strong><span>A few things I want you to always know.</span></button>
+        <button class="tile" data-letter="forever"><span class="emoji">♾️</span><strong>One last secret</strong><span>The most important message is waiting here.</span></button>
+      </div>
+      <div class="letter" id="letterBox" aria-live="polite"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><div class="eyebrow">Surprise No. 4</div><h2>A message, in <span class="script">my voice</span></h2><p>Record a short birthday wish right here, or save a voice recording on your phone and play it for her.</p></div>
+      <div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap"><button class="btn small" id="recordBtn">● Record a message</button><button class="btn secondary small hidden" id="stopBtn">■ Stop recording</button></div>
+      <p class="tiny" id="recordStatus" style="text-align:center;margin-top:12px">Voice recording needs microphone permission and a supported browser.</p>
+      <audio id="voicePlayback" controls class="hidden" style="width:100%;margin-top:12px"></audio>
+    </section>
+
+
+    <section class="section" id="marathiPoem">
+      <div class="section-head"><div class="eyebrow">A poem from my heart</div><h2>माझ्या <span class="script">तेजू</span>साठी ❤️</h2>
+      <p>ही कविता तुझ्यासाठी, माझ्या आवाजात ऐकण्यासाठी. खालील कविता वाच आणि स्वतःच्या आवाजात रेकॉर्ड करून या पेजवर निवडलेली ऑडिओ फाइल जोड.</p></div>
+      <div class="letter open" style="display:block;font-family:Georgia,serif;font-size:1.12rem;text-align:center;line-height:2.05">
+        <b>माझी तेजू… ❤️</b><br>
+        तुझ्या हसण्यात माझं आभाळ खुलतं,<br>
+        तुझ्या सोबतीनं प्रत्येक स्वप्न फुलतं.<br>
+        थकलेल्या दिवसाला तुझी मिठी पुरेशी,<br>
+        तुझ्या एका स्मितानं चिंता होते हलकीशी.<br><br>
+        आपल्या लेकीच्या हसण्यात आपलं जग सामावतं,<br>
+        तुझ्या-माझ्या प्रेमानं घर आपलं सजतं.<br>
+        सुखात, दुःखात हात तुझाच धरायचा,<br>
+        प्रत्येक जन्मी तुझाच सोबती व्हायचं.<br><br>
+        वाढदिवशी एवढंच मागणं देवाकडे,<br>
+        आनंद आणि आरोग्य राहो तुझ्या प्रत्येक पावलापुढे.<br>
+        शब्द कमी पडतील, प्रेम कधीच कमी होणार नाही,<br>
+        माझी तेजू, तुझी जागा कुणीच घेऊ शकणार नाही.<br><br>
+        <span class="script">वाढदिवसाच्या खूप खूप शुभेच्छा, माझ्या प्रेमाला!<br>तुझाच, जयदीप ❤️</span>
+      </div>
+      <div class="divider"></div>
+      <div style="text-align:center">
+        <h3>💌 जयदीपकडून खास संदेश</h3>
+        <p>तेजू, हा संदेश तुझ्यासाठी प्रेमाने लिहिला आहे. ❤️</p>
+        <div class="letter open" style="display:block;text-align:left">
+          माझी लाडकी तेजू,<br><br>
+          तुझ्या आयुष्यात आनंद, समाधान आणि भरपूर प्रेम असावं, हीच माझी मनापासून इच्छा. तुझं हसू असंच कायम राहो. आपल्या छोट्याशा कुटुंबात आपण अजून खूप सुंदर आठवणी तयार करूया. तू माझ्यासाठी किती खास आहेस, हे शब्दांत पूर्ण सांगता येणार नाही. प्रत्येक दिवस तुझ्या सोबत जगण्याची संधी मिळणं हीच माझ्यासाठी सर्वात मोठी भेट आहे.<br><br>
+          वाढदिवसाच्या खूप खूप शुभेच्छा, माझ्या तेजू!<br>
+          कायम तुझाच, जयदीप ❤️
+        </div>
+        <audio id="uploadedVoice" controls style="width:100%;margin-top:16px" preload="metadata">
+          <source src="voice-message.wav" type="audio/wav">
+        </audio>
+        <p class="tiny">तुझ्यासाठी माझ्या आवाजात एक खास संदेश ❤️</p>
+      </div>
+    </section>
+
+    <section class="section" style="text-align:center">
+      <div class="eyebrow">The final surprise</div><div class="heart">♥</div>
+      <h2>My favourite place<br>will always be <span class="script">beside you.</span></h2>
+      <p>Life won't always be perfect, but I promise to keep choosing you, laughing with you, learning with you, and finding new reasons to love you.</p>
+      <p style="font-family:Georgia,serif;font-size:1.25rem;color:#ffd6e3">Happy Birthday, Teju. You are loved — today, tomorrow, always.</p>
+      <p class="script" style="font-size:1.25rem">Forever yours,<br>Jaydeep ♥</p>
+      <button class="btn" id="finale">Make it rain hearts ♥</button>
+    </section>
+    <footer class="footer">Made with all my love · Just for you, Teju ♥</footer>
+  </div>
+</main>
+<div id="toast" class="toast hidden" role="status"></div><div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true" aria-label="Photo preview"><button id="closeLightbox" aria-label="Close photo">×</button><img id="largePhoto" alt="Expanded memory photo"></div>
+<script>
+/* Change the secret code here before sharing. Default code: LOVE123 */
+const SECRET_CODE = "1710";
+const $ = id => document.getElementById(id);
+function toast(msg){$('toast').textContent=msg;$('toast').classList.remove('hidden');setTimeout(()=>$('toast').classList.add('hidden'),3000)}
+function unlock(){if($('secretCode').value.trim().toUpperCase()===SECRET_CODE){$('login').classList.add('hidden');$('app').classList.remove('hidden');document.body.style.overflowX='hidden';typeMessage();heartRain(18);window.scrollTo({top:0,behavior:'smooth'})}else{$('error').textContent="Not quite, my love. Try your special code again ♥";$('secretCode').value='';$('secretCode').focus()}}
+$('unlock').addEventListener('click',unlock);$('secretCode').addEventListener('keydown',e=>{if(e.key==='Enter')unlock()});$('secretCode').addEventListener('focus',()=>{$('secretCode').select()});
+const message="To my favourite person: thank you for filling ordinary days with extraordinary love. You make my world warmer, brighter, and more beautiful just by being in it. Today, every little surprise here is saying what my heart says every day — I am so lucky to have you.";
+function typeMessage(){const el=$('typedMessage');el.textContent='';let i=0;const timer=setInterval(()=>{el.textContent+=message[i++]||'';if(i>=message.length)clearInterval(timer)},30)}
+$('startJourney').onclick=()=>$('cakeSection').scrollIntoView({behavior:'smooth'});
+function blow(){if($('cake').classList.contains('blown')){toast('Your wish is on its way to the universe ✨');return}$('cake').classList.add('blown');$('cakeMessage').textContent='Wish made! May this year bring you every beautiful thing your heart hopes for. ✨';heartRain(30);toast('Birthday magic activated! 🎂')}
+$('cake').onclick=blow;$('cake').onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();blow()}};
+document.querySelectorAll('.photo-slot img').forEach(img=>img.addEventListener('click',e=>{e.preventDefault();$('largePhoto').src=img.src;$('lightbox').classList.remove('hidden')}));
+$('closeLightbox').onclick=()=>$('lightbox').classList.add('hidden');
+$('lightbox').addEventListener('click',e=>{if(e.target===$('lightbox'))$('lightbox').classList.add('hidden')});
+
+const letters={
+miss:"My love, if you're reading this because you miss me, imagine me holding your hand right now. No distance, busy day, or difficult moment can change the place you have in my heart. Take a breath, smile for me, and remember: you are always with me in the little things I do. ♥",
+hug:"Come here, my love. Imagine the warmest hug, the kind where you don't have to explain anything or pretend to be strong. You can rest, breathe, and just be yourself. I'm on your team — on the easy days and especially on the hard ones. One long hug, coming your way. 🫶",
+birthday:"Happy Birthday, Teju. I hope this new year of your life brings you peace, good health, laughter, new adventures, and all the little things that make your eyes sparkle. Thank you for being you. I may not always find the perfect words, but I hope my actions keep reminding you how precious you are to me. Today is yours. Let yourself feel celebrated. ♥",
+forever:"Here is my little secret: this page will end, the candles will melt, and birthdays will pass — but my wish is to keep making a life with you that feels full of kindness, laughter, friendship, and love. I don't need every day to be extraordinary. I just want more ordinary days with you. You are my favourite person, Teju. Always. ♾️"
+};
+document.querySelectorAll('[data-letter]').forEach(btn=>btn.addEventListener('click',()=>{const box=$('letterBox');box.textContent=letters[btn.dataset.letter];box.classList.add('open');box.scrollIntoView({behavior:'smooth',block:'nearest'})}));
+function heartRain(n=18){const emojis=['♥','♡','💗','💕','✨'];for(let i=0;i<n;i++){setTimeout(()=>{const h=document.createElement('span');h.className='float-heart';h.textContent=emojis[Math.floor(Math.random()*emojis.length)];h.style.left=Math.random()*100+'vw';h.style.fontSize=(16+Math.random()*24)+'px';h.style.color=['#ff719b','#ffc4d8','#ffd99a'][Math.floor(Math.random()*3)];h.style.animationDuration=(3+Math.random()*3)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),6500)},i*65)}}
+$('finale').onclick=()=>{heartRain(75);toast('Infinite love. No expiry date. ♥')};
+// Original Happy Birthday-inspired instrumental melody generated in-browser; no copyrighted recording is bundled.
+let audioCtx=null,musicTimer=null,musicOn=false;function playTune(){const C=window.AudioContext||window.webkitAudioContext;if(!C){toast('Audio is not supported in this browser.');return}audioCtx=audioCtx||new C();if(audioCtx.state==='suspended')audioCtx.resume();const notes=[392,392,440,392,523.25,493.88,392,392,440,392,587.33,523.25,392,392,783.99,659.25,523.25,493.88,440,698.46,698.46,659.25,523.25,587.33,523.25];let i=0;const durations=[.28,.28,.55,.55,.55,.85,.28,.28,.55,.55,.55,.85,.28,.28,.55,.55,.55,.55,.9,.28,.28,.55,.55,.55,1];function playNext(){if(!musicOn)return;const osc=audioCtx.createOscillator(),gain=audioCtx.createGain();const dur=durations[i%durations.length];osc.type='sine';osc.frequency.value=notes[i%notes.length];gain.gain.setValueAtTime(.0001,audioCtx.currentTime);gain.gain.exponentialRampToValueAtTime(.07,audioCtx.currentTime+.035);gain.gain.exponentialRampToValueAtTime(.0001,audioCtx.currentTime+dur*.92);osc.connect(gain);gain.connect(audioCtx.destination);osc.start();osc.stop(audioCtx.currentTime+dur);i++;musicTimer=setTimeout(playNext,dur*1000+35)}playNext()}
+$('musicBtn').onclick=()=>{musicOn=!musicOn;$('musicBtn').textContent=musicOn?'♫ Pause tune':'♫ Play a tune';$('musicBtn').setAttribute('aria-pressed',String(musicOn));if(musicOn){if(!musicTimer)playTune();else if(audioCtx&&audioCtx.state==='suspended')audioCtx.resume();toast('A little tune, just for you ♫')}else if(audioCtx){audioCtx.suspend()}};
+// Optional voice recording
+let recorder=null,stream=null,chunks=[];
+$('recordBtn').onclick=async()=>{if(!navigator.mediaDevices||!window.MediaRecorder){toast('Voice recording is not supported here. Try Chrome.');return}try{stream=await navigator.mediaDevices.getUserMedia({audio:true});chunks=[];recorder=new MediaRecorder(stream);recorder.ondataavailable=e=>{if(e.data.size)chunks.push(e.data)};recorder.onstop=()=>{const blob=new Blob(chunks,{type:recorder.mimeType||'audio/webm'});$('voicePlayback').src=URL.createObjectURL(blob);$('voicePlayback').classList.remove('hidden');stream.getTracks().forEach(t=>t.stop());$('recordStatus').textContent='Your recording is ready to play. It stays in this page until you leave.'};recorder.start();$('recordBtn').classList.add('hidden');$('stopBtn').classList.remove('hidden');$('recordStatus').textContent='Recording… say what is in your heart ♥'}catch(e){$('recordStatus').textContent='Microphone permission was not granted. You can still use the rest of the surprise.';toast('Microphone access is needed to record.')}}
+$('stopBtn').onclick=()=>{if(recorder&&recorder.state!=='inactive')recorder.stop();$('stopBtn').classList.add('hidden');$('recordBtn').classList.remove('hidden')};
+</script>
+</body>
+</html>
